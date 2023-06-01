@@ -43,7 +43,7 @@ Loop Through Each Month and Download
     END
 
 Loop Through Each Year and Download
-    ${years}=    Create List    2013    #    2014    2015    2016    2017    2018    2019    2020    2021    2022    2023
+    ${years}=    Create List    2013    2014    2015    2016    2017    2018    2019    2020    2021    2022    2023
     FOR    ${year}    IN    @{years}
         Click Element    id:yearDiv
         Wait Until Element Is Visible    xpath://*[@id="yearDiv"]/ul/li/a[contains(text(), '${year}')]
